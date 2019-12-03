@@ -17,6 +17,14 @@ throwIfNull(clientId, "2nd argument 'clientId' was null.");
 throwIfNull(username, "3rd argument 'username' was null.");
 throwIfNull(password, "4th argument 'password' was null.");
 
+console.log(`************INPUT****************`)
+console.log(`userPoolId: ${userPoolId}`)
+console.log(`clientId: ${clientId}`)
+console.log(`username: ${username}`)
+console.log(`password: ${password}`)
+console.log(`*********************************`)
+console.log('')
+
 var authenticationData = {
     Username: username,
     Password: password,
