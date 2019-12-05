@@ -8,18 +8,18 @@ const throwIfNull = (value, throwMessage) => {
 }
 
 const userPoolId = process.env.UserPoolId || process.argv && process.argv[2];
-const clientId = process.env.ClientId || process.argv && process.argv[3];
+const userPoolClientId = process.env.UserPoolClientId || process.argv && process.argv[3];
 const username = process.env.Username || process.argv && process.argv[4];
 const password = process.env.Password || process.argv && process.argv[5];
 
 throwIfNull(userPoolId, "1st argument 'userPoolId' was null.");
-throwIfNull(clientId, "2nd argument 'clientId' was null.");
+throwIfNull(userPoolClientId, "2nd argument 'userPoolClientId' was null.");
 throwIfNull(username, "3rd argument 'username' was null.");
 throwIfNull(password, "4th argument 'password' was null.");
 
 console.log(`************INPUT****************`)
 console.log(`userPoolId: ${userPoolId}`)
-console.log(`clientId: ${clientId}`)
+console.log(`userPoolClientId: ${userPoolClientId}`)
 console.log(`username: ${username}`)
 console.log(`password: ${password}`)
 console.log(`*********************************`)
@@ -33,7 +33,7 @@ var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(auth
 
 var poolData = {
     UserPoolId: userPoolId, 
-    ClientId: clientId
+    ClientId: userPoolClientId
 };
 var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
 
