@@ -18,8 +18,8 @@ node index.js
 ## Examples:
 
 ### Node arguments example
-```javascript
-node index.js [UserPoolId] [ClientId] [Username] [Password]
+```
+node index.js [UserPoolId] [UserPoolClientId] [Username] [Password]
 
 node index.js ap-southeast-2_XXXXXXX 2bb2344vcfldtha3qh0mj75 test@test.com passwordpassword
 ```
@@ -31,7 +31,7 @@ node index.js ap-southeast-2_XXXXXXX 2bb2344vcfldtha3qh0mj75 test@test.com passw
 Sample content:
 ```javascript
 UserPoolId=ap-southeast-2_XXXXXXX
-ClientId=2bb2344vcfldtha3qh0mj75
+UserPoolClientId=2bb2344vcfldtha3qh0mj75
 Username=test@test.com
 Password=passwordpassword
 ```
