@@ -1,7 +1,7 @@
 # AWS Cognito Token Requestor
 
-This project is to get a AWS Cognito web token from the User Pool.
-Once I have the token, I use it in [Postman](https://www.getpostman.com/) to test my APIs.
+This utility application will get an AWS Cognito web token from the User Pool.
+Once one has the token, use it in [Postman](https://www.getpostman.com/) to test your APIs.
 
 ## Getting started
 - Download [nodejs](https://nodejs.org/en/download/).
